@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+.cabecalho {
+  padding-top: 30px;
+}
+.cabecalho-imagem {
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+}
+.principal {
+  padding-top: 50px;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+#principal-email {
+  border: none;
+  border-bottom: 1px solid #df5055;
+  padding-bottom: 4px;
+  font-size: 25px;
+  font-weight: bold;
+}
+#principal-email:focus {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #e23c41;
+  padding-bottom: 3px;
+}
+#principal-senha {
+  border: none;
+  border-bottom: 1px solid #df5055;
+  padding-bottom: 4px;
+  font-size: 25px;
+  font-weight: bold;
+}
+#principal-senha:focus {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #e23c41;
+  padding-bottom: 3px;
+}
+#principal-mensagem {
+  padding-top: 10px;
+  color: #df5055;
+}
+.rodape {
+  padding-top: 50px;
+}
+.rodape-botao {
+  display: block;
+  margin: 0 auto;
+  background-color: rgba(208, 5, 11, 70%);
+  border: none;
+  border-radius: 30px;
+  padding: 20px;
+  font-size: 30px;
+  width: 20%;
+  cursor: pointer;
+}
+.rodape-botao:hover {
+  background-color: rgba(208, 5, 11, 90%);
+}

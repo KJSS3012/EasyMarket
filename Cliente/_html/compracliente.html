@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../_css/compracliente.css" />
+    <title>Escolha seu produto</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <input type="button" value="Voltar" class="cabecalho-botao" onclick="voltar()"/>
+    </header>
+    <main class="principal">
+      <section class="secao1">
+        <div class="secao1-div">
+          <input type="text" class="secao1-div-visor" readonly value="Macarrão"/>
+          <div class="secao1-div2">
+            <input type="button" value="-" class="secao1-diminuir" onclick="remover('1')"/>
+            <input type="text" readonly class="visor2" value="0" id="visor1"/>
+            <input type="button" value="+" class="secao1-aumentar" onclick="adicionar('1')"/>
+          </div>
+        </div>
+
+        <div class="secao1-div">
+          <input type="text" class="secao1-div-visor" value="Arroz" readonly />
+          <div class="secao1-div2">
+            <input type="button" value="-" class="secao1-diminuir" onclick="remover('2')"/>
+            <input type="text" readonly class="visor2" value="0" id="visor2"/>
+            <input type="button" value="+" class="secao1-aumentar" onclick="adicionar('2')"/>
+          </div>
+        </div>
+
+        <div class="secao1-div">
+          <input type="text" class="secao1-div-visor" value="Feijão" readonly />
+          <div class="secao1-div2">
+            <input type="button" value="-" class="secao1-diminuir" onclick="remover('3')"/>
+            <input type="text" readonly class="visor2" value="0" id="visor3"/>
+            <input type="button" value="+" class="secao1-aumentar" onclick="adicionar('3')"/>
+          </div>
+        </div>
+
+        <div class="secao1-div">
+          <input type="text" class="secao1-div-visor" value="Carne" readonly />
+          <div class="secao1-div2">
+            <input type="button" value="-" class="secao1-diminuir" onclick="remover('4')"/>
+            <input type="text" readonly class="visor2" value="0" id="visor4"/>
+            <input type="button" value="+" class="secao1-aumentar" onclick="adicionar('4')"/>
+          </div>
+        </div>
+
+        <div class="secao1-div">
+          <input type="text" class="secao1-div-visor" value="Frango" readonly />
+          <div class="secao1-div2">
+            <input type="button" value="-" class="secao1-diminuir" onclick="remover('5')"/>
+            <input type="text" readonly class="visor2" value="0" id="visor5"/>
+            <input type="button" value="+" class="secao1-aumentar" onclick="adicionar('5')"/>
+          </div>
+        </div>
+
+        <div class="secao1-div">
+          <input type="text" class="secao1-div-visor" value="Peixe" readonly />
+          <div class="secao1-div2">
+            <input type="button" value="-" class="secao1-diminuir" onclick="remover('6')"/>
+            <input type="text" readonly class="visor2" value="0" id="visor6"/>
+            <input type="button" value="+" class="secao1-aumentar" onclick="adicionar('6')"/>
+          </div>
+        </div>
+
+        <div class="secao1-div">
+          <input type="text" class="secao1-div-visor" value="Banana" readonly />
+          <div class="secao1-div2">
+            <input type="button" value="-" class="secao1-diminuir" onclick="remover('7')"/>
+            <input type="text" readonly class="visor2" value="0" id="visor7"/>
+            <input type="button" value="+" class="secao1-aumentar" onclick="adicionar('7')"/>
+          </div>
+        </div>
+
+        <div class="secao1-div">
+          <input type="text" class="secao1-div-visor" value="Maçã" readonly />
+          <div class="secao1-div2">
+            <input type="button" value="-" class="secao1-diminuir" onclick="remover('8')"/>
+            <input type="text" readonly class="visor2" value="0" id="visor8"/>
+            <input type="button" value="+" class="secao1-aumentar" onclick="adicionar('8')"/>
+          </div>
+        </div>
+
+        <div class="secao1-div">
+          <input type="text" class="secao1-div-visor" value="Tomate" readonly />
+          <div class="secao1-div2">
+            <input type="button" value="-" class="secao1-diminuir" onclick="remover('9')"/>
+            <input type="text" readonly class="visor2" value="0" id="visor9"/>
+            <input type="button" value="+" class="secao1-aumentar" onclick="adicionar('9')"/>
+          </div>
+        </div>
+      </section>
+      <section class="secao2">
+        <table class="tabela" id="tabela">
+          <tr class="tabela-linha">
+            <td class="tabela-texto"></td>
+          </tr>
+        </table>
+        <div class="ultima-div" >
+          <input type="number" readonly/ id="visorfinal">
+          <input type="button" value="Finalizar" class="ultima-div-botao"/>
+        </div>
+      </section>
+    </main>
+    <script src="../_js/compracliente.js"></script>
+    <script src="../_js/database.js"></script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 100%;
+}
+.cabecalho {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cabecalho-imagem {
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+.cabecalho-secao {
+  margin-top: 20px;
+  border-top: 1px solid;
+}
+.cabecalho-secao-nav {
+  padding-top: 20px;
+  display: flex;
+  gap: 30px;
+}
+.cabecalho-secao-nav-link {
+  color: black;
+}
+.cabecalho-secao-nav-link:hover {
+  color: rgba(208, 5, 11, 70%);
+}
+.principal {
+  padding-top: 100px;
+}
+#principal-titulo {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.principal-paragrafo {
+  text-indent: 50px;
+  text-align: justify;
+  margin: 0 50px;
+  padding-bottom: 10px;
+}
+.principal-secao {
+  padding-top: 200px;
+  text-align: center;
+}
+
+#principal-secao-botao {
+  background-color: rgba(208, 5, 11, 70%);
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+}
+#principal-secao-botao:hover {
+  background-color: rgba(208, 5, 11, 90%);
+}
+.principal-secao2 {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+}
+#principal-secao2-titulo {
+  text-align: center;
+}
+.principal-secao3 {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 60px;
+  width: 900px;
+  text-align: justify;
+}
+.principal-secao3-div {
+  display: flex;
+  align-items: center;
+}
+.principal-secao3-imagem {
+  height: 200px;
+  padding-right: 40px;
+}
+.principal-secao3-div2 {
+  padding-left: 9%;
+  padding-top: 10px;
+}
+.principal-secao4 {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: justify;
+  padding-bottom: 100px;
+}
+.principal-secao4-div {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.principal-secao4-imagem {
+  height: 200px;
+  padding-right: 70px;
+}
+.principal-secao4-descricao {
+  width: 650px;
+  padding-right: 40px;
+}
+.principal-secao4-div2 {
+  padding-right: 9%;
+  padding-top: 10px;
+}
+.principal-secao4-cargo {
+  position: absolute;
+  left: 85%;
+}
+.rodape {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(208, 5, 11, 70%);
+}
+#rodape-contato {
+  padding-bottom: 40px;
+  text-align: center;
+}
+.rodape-secao-mapa {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+.rodape-secao2 {
+  padding-bottom: 50px;
+}
+.rodape-secao2-informacoes {
+  padding-bottom: 8px;
+}
