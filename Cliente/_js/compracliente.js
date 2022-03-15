@@ -166,6 +166,6 @@ function calc(codigo) {
         resultado = valordovisor * tomate.preço;
         v9 = resultado
     }
-   document.getElementById('visorfinal').value = (v1 + v2 + v3 + v4 + v5 + v6 + v7 + v8 + v9);
+   document.getElementById('visorfinal').value = (v1 + v2 + v3 + v4 + v5 + v6 + v7 + v8 + v9).toFixed(2);
    
 }
