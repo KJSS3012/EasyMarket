@@ -1,60 +1,52 @@
 var tabela = document.getElementById('tabela');
 var aux = tabela.innerHTML;
 var visorfim = 0;
+
+function adicionar_AUX(visor,id) {
+    valor = Number(document.getElementById(visor).value);
+    document.getElementById(visor).value = valor + 1;
+    var p = produtos[id];
+    var item = `<tr class="tabela-linha"><strong>Nome: </strong>${p.nome}&nbsp;<strong>Id: </strong>${p.id}`+(valor+1)+`&nbsp;<strong>Preço R$: </strong>${p.preço}</td></tr>`;
+    console.log(valor);
+    if (valor==0) {
+        tabela.innerHTML = tabela.innerHTML + aux+item;
+        calc(codigo);
+    }else{
+        aux.innerHTML = tabela.innerHTML + item;
+        calc(codigo);
+        valor++;
+    }
+}
+
 function adicionar(codigo) {
     if (codigo == 1) {
-        valor = Number(document.getElementById('visor1').value);
-        document.getElementById('visor1').value = valor + 1;
-                var p = produtos[0];
-                var item = `<tr class="tabela-linha"><strong>Nome: </strong>${p.nome}&nbsp;<strong>Id: </strong>${p.id}`+(valor+1)+`&nbsp;<strong>Preço R$: </strong>${p.preço}</td></tr>`;
-                if (valor==0) {
-                    tabela.innerHTML = aux+item;
-                    calc(codigo);
-                }else{
-                    aux.innerHTML = item;
-                    calc(codigo);
-                }
-        }
+        adicionar_AUX("visor1", 0)
+    }
 
     if (codigo == 2) {
-        valor = Number(document.getElementById('visor2').value);
-        document.getElementById('visor2').value = valor + 1;
-        calc(codigo);
+        adicionar_AUX("visor2", 1)
     }
     if (codigo == 3) {
-        valor = Number(document.getElementById('visor3').value);
-        document.getElementById('visor3').value = valor + 1;
-        calc(codigo);
+        adicionar_AUX("visor3", 2)
+
     }
     if (codigo == 4) {
-        valor = Number(document.getElementById('visor4').value);
-        document.getElementById('visor4').value = valor + 1;
-        calc(codigo);
+        adicionar_AUX("visor4", 3)
     }
     if (codigo == 5) {
-        valor = Number(document.getElementById('visor5').value);
-        document.getElementById('visor5').value = valor + 1;
-        calc(codigo);
+        adicionar_AUX("visor5", 4)
     }
     if (codigo == 6) {
-        valor = Number(document.getElementById('visor6').value);
-        document.getElementById('visor6').value = valor + 1;
-        calc(codigo);
+        adicionar_AUX("visor6", 5)
     }
     if (codigo == 7) {
-        valor = Number(document.getElementById('visor7').value);
-        document.getElementById('visor7').value = valor + 1;
-        calc(codigo);
+        adicionar_AUX("visor7", 6)
     }
     if (codigo == 8) {
-        valor = Number(document.getElementById('visor8').value);
-        document.getElementById('visor8').value = valor + 1;
-        calc(codigo);
+        adicionar_AUX("visor8", 7)
     }
     if (codigo == 9) {
-        valor = Number(document.getElementById('visor9').value);
-        document.getElementById('visor9').value = valor + 1;
-        calc(codigo);
+        adicionar_AUX("visor9", 8)
     }
 }
 
@@ -118,54 +110,49 @@ function remover(codigo) {
 function voltar() {
     location.href = "../_html/logincliente.html"
 }
+bank[9]
+caixa = 0;
 
-v1 = 0 ; v2 = 0; v3 = 0; v4 = 0; v5 = 0; v6 = 0; v7 = 0; v8 = 0; v9 = 0;
-function calc(codigo) {
-   if (codigo==1) {
-        valordovisor = Number(document.getElementById('visor1').value);
-        resultado = valordovisor * macarrao.preço;
-        v1 = resultado
+function cal_AUX(codigo,id,visor,produto) {
+    if (codigo==id) {
+        valordovisor = Number(document.getElementById(visor).value);
+        resultado = valordovisor * produto.preço;
+        bank[id-1] = resultado;
+        console.log(resultado)
    }
+}
+
+function calc(codigo) {
+    cal_AUX(codigo,1,"visor1",macarrao)
+       
+   
    if (codigo==2) {
-        valordovisor = Number(document.getElementById('visor2').value);
-        resultado = valordovisor * arroz.preço;
-        v2 = resultado
+    cal_AUX(codigo,"visor2", arroz)
    }
    if (codigo==3) {
-    valordovisor = Number(document.getElementById('visor3').value);
-    resultado = valordovisor * feijao.preço;
-    v3 = resultado
+    cal_AUX(codigo,"visor3",feijao)
     }
     if (codigo==4) {
-        valordovisor = Number(document.getElementById('visor4').value);
-        resultado = valordovisor * carne.preço;
-        v4 = resultado
+        cal_AUX(codigo,"visor4",carne)
     }
     if (codigo==5) {
-        valordovisor = Number(document.getElementById('visor5').value);
-        resultado = valordovisor * frango.preço;
-        v5 = resultado
+        cal_AUX(codigo,"visor5",frango)
     }
     if (codigo==6) {
-        valordovisor = Number(document.getElementById('visor6').value);
-        resultado = valordovisor * peixe.preço;
-        v6 = resultado
+        cal_AUX(codigo,"visor6",peixe)
     }
     if (codigo==7) {
-        valordovisor = Number(document.getElementById('visor7').value);
-        resultado = valordovisor * banana.preço;
-        v7 = resultado
+        cal_AUX(codigo,"visor7",banana)
     }
     if (codigo==8) {
-        valordovisor = Number(document.getElementById('visor8').value);
-        resultado = valordovisor * maca.preço;
-        v8 = resultado
+        cal_AUX(codigo,"visor8",maca)
     }
     if (codigo==9) {
-        valordovisor = Number(document.getElementById('visor9').value);
-        resultado = valordovisor * tomate.preço;
-        v9 = resultado
+        cal_AUX(codigo,"visor9",tomate)
     }
-   document.getElementById('visorfinal').value = (v1 + v2 + v3 + v4 + v5 + v6 + v7 + v8 + v9).toFixed(2);
    
+   for (let index = 0; index < bank.length; index++) {
+       caixa+= bank[index]
+   }
+   document.getElementById('visorfinal').value = (caixa).toFixed(2);
 }

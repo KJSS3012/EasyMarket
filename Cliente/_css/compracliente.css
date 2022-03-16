@@ -5,7 +5,7 @@
   font-family: "Be Vietnam Pro", sans-serif;
 }
 .cabecalho {
-  padding: 20px 0 0 20px;
+  padding: 2% 0 0 2%;
 }
 .cabecalho-botao {
   background-color: rgba(208, 5, 11, 70%);
@@ -114,6 +114,6 @@
   font-size: 20px;
   cursor: pointer;
 }
-.display{
+.display {
   display: none;
 }
