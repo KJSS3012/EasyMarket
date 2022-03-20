@@ -5,22 +5,13 @@ var visorfim = 0;
 function adicionar_AUX(visor,id) {
     valor = Number(document.getElementById(visor).value);
     document.getElementById(visor).value = valor + 1;
-    var p = produtos[id];
-    var item = `<tr class="tabela-linha"><strong>Nome: </strong>${p.nome}&nbsp;<strong>Id: </strong>${p.id}`+(valor+1)+`&nbsp;<strong>Preço R$: </strong>${p.preço}</td></tr>`;
-    if (valor==0) {
-        tabela.innerHTML = tabela.innerHTML +item;
-        calc(id+1);
-    }else{
-        aux.innerHTML = tabela.innerHTML + item;
-        calc(id+1);
-    }
+    calc(id+1)
 }
 
 function adicionar(codigo) {
     if (codigo == 1) {
         adicionar_AUX("visor1", 0)
     }
-
     if (codigo == 2) {
         adicionar_AUX("visor2", 1)
     }
@@ -46,21 +37,12 @@ function adicionar(codigo) {
         adicionar_AUX("visor9", 8)
     }
 }
+
 function remover_AUX(id,visor) {
     if (document.getElementById(visor).value>0) {
         valor = Number(document.getElementById(visor).value);
         document.getElementById(visor).value = valor - 1;
-        var tabela = document.getElementById('tabela');
-        var p = produtos[id-1];
-        var item = `<tr class="tabela-linha"><strong>Nome: </strong>${p.nome}&nbsp;<strong>Id: </strong>${p.id}`+(valor-1)+`&nbsp;<strong>Preço R$: </strong>${p.preço}</td></tr>`;
-            if (document.getElementById(visor).value<1) {
-                item = `<tr class="tabela-linha"><td class="tabela-texto"></td></tr>`;
-                tabela.innerHTML = item;
-                calc(id);
-            }else{
-                tabela.innerHTML = item;
-                calc(id);
-                }
+        calc(id)
     }
 }
 

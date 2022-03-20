@@ -1,4 +1,4 @@
-macarrao = {nome:"Macarrão", id:"0010", preço:2.4}
+macarrao = {nome:"Macarrão", id:"0010", preço:2.4,}
 arroz = {nome:"Arroz", id:"0011", preço:3.6}
 feijao = {nome:"Feijão", id:"0012", preço:7.5}
 

@@ -102,20 +102,35 @@
 .ultima-div {
   position: absolute;
   top: 75%;
-  padding-top: 40px;
+  left: 80%;
+  padding-top: 2%;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 20%;
+}
+#visorfinal {
+  background-color: #c4c4c4;
+  border: none;
+  padding: 10px;
+  width: 50%;
+  height: 30px;
+  text-align: center;
+  font-size: 19px;
 }
 .ultima-div-botao {
   background-color: rgb(3, 211, 20);
+  text-align: center;
   border: none;
   border-radius: 30px;
   padding: 20px;
-  width: 130px;
+  width: 50%;
   font-size: 20px;
   cursor: pointer;
 }
-.display {
-  display: none;
+@media (max-width: 1000px) {
+  input.ultima-div-botao {
+    font-size: 14px;
+    text-align: center;
+  }
 }
