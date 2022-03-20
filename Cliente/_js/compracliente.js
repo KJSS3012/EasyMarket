@@ -1,7 +1,3 @@
-var tabela = document.getElementById('tabela');
-var aux = tabela.innerHTML;
-var visorfim = 0;
-
 function adicionar_AUX(visor,id) {
     valor = Number(document.getElementById(visor).value);
     document.getElementById(visor).value = valor + 1;
