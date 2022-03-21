@@ -7,6 +7,16 @@
   font-family: "Be Vietnam Pro", sans-serif;
   font-size: 100%;
 }
+body {
+  background-color: #e1e1e1;
+}
+.rodape-secao2 a {
+  text-decoration: none;
+  color: white;
+}
+.rodape-secao2 a:visited {
+  color: white;
+}
 .cabecalho {
   display: flex;
   flex-direction: column;
@@ -14,13 +24,13 @@
   align-items: center;
 }
 .cabecalho-imagem {
-  height: 100px;
+  height: 140px;
   display: block;
   margin: 0 auto;
 }
 .cabecalho-secao {
-  margin-top: 20px;
-  border-top: 1px solid;
+  margin-top: 12px;
+  border-top: 2px solid;
 }
 .cabecalho-secao-nav {
   padding-top: 20px;
@@ -31,7 +41,7 @@
   color: black;
 }
 .cabecalho-secao-nav-link:hover {
-  color: rgba(208, 5, 11, 70%);
+  color: rgba(208, 5, 11, 85%);
 }
 .principal {
   padding-top: 100px;
@@ -39,6 +49,7 @@
 #principal-titulo {
   text-align: center;
   padding-bottom: 50px;
+  font-size: 30px;
 }
 .principal-paragrafo {
   text-indent: 50px;
@@ -47,43 +58,55 @@
   padding-bottom: 10px;
 }
 .principal-secao {
-  padding-top: 200px;
+  padding-top: 100px;
   text-align: center;
 }
-
+.principal-secao-titulo {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
 #principal-secao-botao {
-  background-color: rgba(208, 5, 11, 70%);
+  background-color: rgba(208, 5, 11, 100%);
+  color: white;
   border: none;
   border-radius: 30px;
-  font-size: 20px;
+  font-size: 30px;
   cursor: pointer;
-  padding: 10px;
+  padding: 30px;
 }
 #principal-secao-botao:hover {
-  background-color: rgba(208, 5, 11, 90%);
+  background-color: rgba(208, 5, 11, 80%);
 }
 .principal-secao2 {
-  padding-top: 200px;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
 }
 #principal-secao2-titulo {
   text-align: center;
+  font-size: 30px;
+}
+.background-secao-3 {
+  background-color: #aaaaaa;
 }
 .principal-secao3 {
   padding-top: 80px;
   display: flex;
   flex-direction: column;
   padding-left: 60px;
-  width: 900px;
+  width: 80%;
   text-align: justify;
 }
 .principal-secao3-div {
   display: flex;
   align-items: center;
+  background-color: #aaaaaa;
+}
+.background-secao3-div {
+  background-color: #aaaaaa;
 }
 .principal-secao3-imagem {
-  height: 200px;
+  height: 220px;
   padding-right: 40px;
 }
 .principal-secao3-div2 {
@@ -94,9 +117,12 @@
   padding-top: 80px;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
   text-align: justify;
   padding-bottom: 100px;
+}
+.backgroud-secao4-div {
+  background-color: #aaaaaa;
 }
 .principal-secao4-div {
   display: flex;
@@ -104,7 +130,7 @@
   align-items: center;
 }
 .principal-secao4-imagem {
-  height: 200px;
+  height: 220px;
   padding-right: 70px;
 }
 .principal-secao4-descricao {
@@ -124,19 +150,41 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(208, 5, 11, 70%);
+  background-color: rgba(208, 5, 11, 100%);
 }
 #rodape-contato {
   padding-bottom: 40px;
   text-align: center;
+  font-size: 30px;
 }
 .rodape-secao-mapa {
   padding-top: 70px;
   padding-bottom: 30px;
+  width: 900px;
+  height: 450px;
+  border: none;
 }
 .rodape-secao2 {
   padding-bottom: 50px;
+  text-align: center;
+  color: white;
 }
 .rodape-secao2-informacoes {
   padding-bottom: 8px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(208, 5, 11, 100%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(197, 5, 11);
 }
