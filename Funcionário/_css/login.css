@@ -5,7 +5,9 @@
   box-sizing: border-box;
   font-family: "Be Vietnam Pro", sans-serif;
 }
-
+body{
+  background-color: #e1e1e1;
+}
 .cabecalho {
   padding-top: 30px;
 }
@@ -59,7 +61,8 @@
 .rodape-botao {
   display: block;
   margin: 0 auto;
-  background-color: rgba(208, 5, 11, 70%);
+  color: white;
+  background-color: rgba(208, 5, 11, 95%);
   border: none;
   border-radius: 30px;
   padding: 20px;
