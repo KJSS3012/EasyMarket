@@ -14,20 +14,22 @@
     <main class="principal">
       <section class="secao1">
         <div class="secao1-div1">
-          <input type="number" id="prod" class="visor"/>
+          <p>Produto</p>
+          <input type="number" id="prod" class="escrita"/>
         </div>
         <div class="secao1-div2">
           <input type="number" readonly id="visor" value="0" class="visor"/>
-          <input type="button" value="Validar" onclick="validar()" class="validar"/>
+          <input type="button" value="Validar" onclick="validar()" class="funcao"/>
         </div>
       </section>
       <section class="secao2">
+        <p>Troco</p>
         <div class="secao2-div1">
-          <input type="number" id="prod-troco" class="visor"/>
+          <input type="number" id="prod-troco" class="escrita"/>
         </div>
         <div class="secao2-div2">
           <input type="number" readonly id="visor-troco" value="0" class="visor" />
-          <input type="button" value="Calcular" onclick="troco()" class="calcular"/>
+          <input type="button" value="Calcular" onclick="troco()" class="funcao"/>
         </div>
       </section>
     </main>
