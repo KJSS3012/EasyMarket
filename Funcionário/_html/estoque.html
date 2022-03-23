@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../_css/estoque.css" />
+    <link rel="icon" href="../_image/easy_icon.png">
+    <title>Estoque</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <input type="button" value="Voltar" id="botao-cabecalho" />
+    </header>
+    <main class="principal">
+      <section class="secao-esquerda">
+        <table class="tabela">
+          <tr class="Linhas">
+            <th class="tabela-titulo">Nome</th>
+            <th class="tabela-titulo">Preço</th>
+            <th class="tabela-titulo">Quantidade</th>
+          </tr>
+          <tr class="Linhas">
+            <td class="tabela-td">Macarrão</td>
+            <td class="tabela-td">R$ 2,40 pac.</td>
+            <td id="qnt1" class="tabela-td">20</td>
+          </tr>
+          <tr class="Linhas">
+            <td class="tabela-td">Arroz</td>
+            <td class="tabela-td">R$ 3,60 kg.</td>
+            <td id="qnt2" class="tabela-td">15</td>
+          </tr>
+          <tr class="Linhas">
+            <td class="tabela-td">Feijão</td>
+            <td class="tabela-td">R$ 7,50 kg.</td>
+            <td id="qnt3" class="tabela-td">35</td>
+          </tr>
+          <tr class="Linhas">
+            <td class="tabela-td">Carne</td>
+            <td class="tabela-td">R$ 40,00 kg.</td>
+            <td id="qnt4" class="tabela-td">15</td>
+          </tr>
+          <tr class="Linhas">
+            <td class="tabela-td">Frango</td>
+            <td class="tabela-td">R$ 10,00 kg.</td>
+            <td id="qnt5" class="tabela-td">15</td>
+          </tr>
+          <tr class="Linhas">
+            <td class="tabela-td">Peixe</td>
+            <td class="tabela-td">R$ 15,00 kg.</td>
+            <td id="qnt6" class="tabela-td">30</td>
+          </tr>
+          <tr class="Linhas">
+            <td class="tabela-td">Banana</td>
+            <td class="tabela-td">R$ 6,00 kg.</td>
+            <td id="qnt7" class="tabela-td">30</td>
+          </tr>
+          <tr class="Linhas">
+            <td class="tabela-td">Maçã</td>
+            <td class="tabela-td">R$ 6,00 kg.</td>
+            <td id="qnt8" class="tabela-td">20</td>
+          </tr>
+          <tr class="Linhas">
+            <td class="tabela-td">Tomate</td>
+            <td class="tabela-td">R$ 8,40 kg.</td>
+            <td id="qnt9" class="tabela-td">35</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="secao-direita">
+        <div class="texto"><h1>Macarrão</h1></div>
+        <div class="inputs">
+          <input id="1" type="number" class="visor" />
+          <input type="radio" value="Adicionar" name="selecionar1" />Adicionar
+          <input type="radio" value="Retirar" name="selecionar1" />Remover
+        </div>
+
+        <div class="texto"><h1>Arroz</h1></div>
+        <div class="inputs">
+          <input id="2" type="number" class="visor" />
+          <input type="radio" value="Adicionar" name="selecionar2" />Adicionar
+          <input type="radio" value="Retirar" name="selecionar2" />Remover
+        </div>
+
+        <div class="texto"><h1>Feijão</h1></div>
+        <div class="inputs">
+          <input id="3" type="number" class="visor" />
+          <input type="radio" value="Adicionar" name="selecionar3" />Adicionar
+          <input type="radio" value="Retirar" name="selecionar3" />Remover
+        </div>
+
+        <div class="texto"><h1>Carne</h1></div>
+        <div class="inputs">
+          <input id="4" type="number" class="visor" />
+          <input type="radio" value="Adicionar" name="selecionar4" />Adicionar
+          <input type="radio" value="Retirar" name="selecionar4" />Remover
+        </div>
+
+        <div class="texto"><h1>Frango</h1></div>
+        <div class="inputs">
+          <input id="5" type="number" class="visor" />
+          <input type="radio" value="Adicionar" name="selecionar5" />Adicionar
+          <input type="radio" value="Retirar" name="selecionar5" />Remover
+        </div>
+
+        <div class="texto"><h1>Peixe</h1></div>
+        <div class="inputs">
+          <input id="6" type="number" class="visor" />
+          <input type="radio" value="Adicionar" name="selecionar6" />Adicionar
+          <input type="radio" value="Retirar" name="selecionar6" />Remover
+        </div>
+
+        <div class="texto"><h1>Banana</h1></div>
+        <div class="inputs">
+          <input id="7" type="number" class="visor" />
+          <input type="radio" value="Adicionar" name="selecionar7" />Adicionar
+          <input type="radio" value="Retirar" name="selecionar7" />Remover
+        </div>
+
+        <div class="texto"><h1>Maçã</h1></div>
+        <div class="inputs">
+          <input id="8" type="number" class="visor" />
+          <input type="radio" value="Adicionar" name="selecionar8" />Adicionar
+          <input type="radio" value="Retirar" name="selecionar8" />Remover
+        </div>
+
+        <div class="texto"><h1>Tomate</h1></div>
+        <div class="inputs">
+          <input id="9" type="number" class="visor" />
+          <input type="radio" value="Adicionar" name="selecionar9" />Adicionar
+          <input type="radio" value="Retirar" name="selecionar9" />Remover
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="botoes">
+        <input type="button" value="Finalizar" class="rodape-botao" onclick="processar()" />
+      </div>
+    </footer>
+    <script src="../_js/estoque.js"></script>
+  </body>
+</html>

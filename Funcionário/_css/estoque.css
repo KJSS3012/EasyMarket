@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.cabecalho {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+#botao-cabecalho {
+  background-color: rgba(208, 5, 11, 70%);
+  border: none;
+  border-radius: 30px;
+  padding: 20px;
+  width: 10%;
+  font-size: 20px;
+  cursor: pointer;
+}
+.principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.secao-esquerda {
+  padding-top: 40px;
+}
+.tabela {
+  border: 1px solid;
+}
+.tabela-td {
+  padding: 10px;
+}
+.secao-direita {
+  display: flex;
+  flex-direction: column;
+}
+.inputs {
+  display: flex;
+  gap: 20px;
+}
+.visor {
+  padding: 2px;
+  border: none;
+  border-bottom: 1px solid;
+}
+.rodape {
+  padding-top: 30px;
+}
+.rodape-botao {
+  position: absolute;
+  left: 73%;
+  background-color: rgb(3, 211, 20);
+  text-align: center;
+  border: none;
+  border-radius: 30px;
+  padding: 20px;
+  width: 10%;
+  font-size: 20px;
+  cursor: pointer;
+}
