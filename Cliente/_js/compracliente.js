@@ -128,6 +128,7 @@ function finalizar() {
     var l8 = `<tr>Maçã&nbsp;R$ 6,00&nbsp;${document.getElementById('visor8').value}</tr>`
     var l9 = `<tr>Tomate&nbsp;R$ 8,40&nbsp;${document.getElementById('visor9').value}</tr>`
     var l10 = `<tr>Total: ${document.getElementById('visorfinal').value}</tr>`
+    var ltotal = l1+l2+l3+l4+l5+l6+l7+l8+l9+l10
     document.getElementById('table').innerHTML += l1;
     document.getElementById('table').innerHTML += l2;
     document.getElementById('table').innerHTML += l3;

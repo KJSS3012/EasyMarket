@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: "Be Vietnam Pro", sans-serif;
 }
-body{
+body {
   background-color: #e1e1e1;
 }
 .cabecalho {
@@ -31,6 +31,7 @@ body{
   padding-bottom: 4px;
   font-size: 25px;
   font-weight: bold;
+  background: none;
 }
 #principal-email:focus {
   outline: none;
@@ -44,6 +45,7 @@ body{
   padding-bottom: 4px;
   font-size: 25px;
   font-weight: bold;
+  background: none;
 }
 #principal-senha:focus {
   outline: none;
@@ -71,5 +73,11 @@ body{
   cursor: pointer;
 }
 .rodape-botao:hover {
-  background-color: rgba(208, 5, 11, 90%);
+  background-color: rgba(226, 6, 13, 0.9);
+}
+@media (max-width: 600px) {
+  button.rodape-botao {
+    font-size: 20px;
+    text-align: center;
+  }
 }

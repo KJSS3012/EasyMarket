@@ -4,29 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../_css/venda.css">
     <title>Venda seu peixe</title>
   </head>
   <body>
-    <header>
-      <input type="button" value="Voltar" />
+    <header class="cabecalho">
+      <input type="button" value="Voltar" onclick="voltar()" id="botao-cabecalho" />
     </header>
-    <main>
-      <section>
-        <div>
-          <input type="number" id="prod" />
-          <input type="button" value="Validar" onclick="validar()" />
+    <main class="principal">
+      <section class="secao1">
+        <div class="secao1-div1">
+          <input type="number" id="prod" class="visor"/>
         </div>
-        <div>
-          <input type="number" readonly id="visor" value="0" />
+        <div class="secao1-div2">
+          <input type="number" readonly id="visor" value="0" class="visor"/>
+          <input type="button" value="Validar" onclick="validar()" class="validar"/>
         </div>
       </section>
-      <section>
-        <div>
-          <input type="number" id="prod-troco" />
-          <input type="button" value="Calcular" onclick="troco()" />
+      <section class="secao2">
+        <div class="secao2-div1">
+          <input type="number" id="prod-troco" class="visor"/>
         </div>
-        <div>
-          <input type="number" readonly id="visor-troco" value="0" />
+        <div class="secao2-div2">
+          <input type="number" readonly id="visor-troco" value="0" class="visor" />
+          <input type="button" value="Calcular" onclick="troco()" class="calcular"/>
         </div>
       </section>
     </main>

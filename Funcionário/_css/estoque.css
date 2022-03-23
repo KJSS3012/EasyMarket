@@ -1,25 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Be Vietnam Pro", sans-serif;
 }
-h1{
-  font-family: Arial, Helvetica, sans-serif;
+h1 {
+  font-size: 18px;
 }
 .cabecalho {
   padding-top: 20px;
   padding-left: 10px;
 }
 #botao-cabecalho {
-  background-color: rgba(208, 5, 11, 70%);
+  background-color: rgba(208, 5, 11, 100%);
   border: none;
   border-radius: 30px;
   padding: 20px;
-  width: 10%;
+  width: 8%;
   font-size: 20px;
   cursor: pointer;
+  color: white;
 }
 .principal {
   display: flex;
@@ -30,30 +32,64 @@ h1{
   padding-top: 40px;
 }
 .tabela {
-  border: 1px solid;
+  text-align: center;
+  border-collapse: collapse;
+  border: none;
+  border-radius: 30px;
+  height: 60px;
+}
+.tabela-titulo {
+  background-color: rgba(208, 5, 11, 90%);
+  color: white;
+  padding: 10px;
 }
 .tabela-td {
   padding: 10px;
+  color: white;
+  height: 100%;
+}
+.zebra1 {
+  background-color: rgba(208, 5, 11, 75%);
+}
+.zebra2 {
+  background-color: rgba(208, 5, 11, 60%);
 }
 .secao-direita {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
+  width: 35%;
+  padding: 2%;
+  background-color: #e1e1e136;
+  border-radius: 30px;
+}
+.texto-radio {
+  font-size: 14px;
 }
 .inputs {
   display: flex;
-  gap: 20px;
+  gap: 2%;
 }
 .visor {
   padding: 2px;
   border: none;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #e23c41;
+  border-radius: 3px;
+  background: none;
+  width: 40%;
+}
+.visor:focus {
+  outline: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #e23c41;
 }
 .rodape {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 .rodape-botao {
   position: absolute;
-  left: 73%;
+  left: 69%;
   background-color: rgb(3, 211, 20);
   text-align: center;
   border: none;
@@ -62,4 +98,139 @@ h1{
   width: 10%;
   font-size: 20px;
   cursor: pointer;
+}
+@media (max-width: 2000px) {
+  input.inputs {
+    text-align: center;
+    width: 2px;
+  }
+}
+
+@media (max-width: 1000px) {
+  td {
+    font-size: 15px;
+    text-align: center;
+  }
+  th {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  td {
+    font-size: 10px;
+    text-align: center;
+  }
+  th {
+    font-size: 11px;
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  td {
+    font-size: 9px;
+    text-align: center;
+  }
+  th {
+    font-size: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1100px) {
+  h1 {
+    font-size: 15px;
+  }
+  span.texto-radio {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1050px) {
+  h1 {
+    font-size: 12px;
+  }
+  span.texto-radio {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 10px;
+  }
+  span.texto-radio {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 1090px) {
+  #botao-cabecalho {
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 890px) {
+  #botao-cabecalho {
+    font-size: 12px;
+    text-align: center;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 650px) {
+  #botao-cabecalho {
+    font-size: 9px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  #botao-cabecalho {
+    font-size: 8px;
+    text-align: center;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 1190px) {
+  .rodape-botao {
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 990px) {
+  .rodape-botao {
+    font-size: 13px;
+    text-align: center;
+    padding: 17px;
+  }
+}
+
+@media (max-width: 790px) {
+  .rodape-botao {
+    font-size: 13px;
+    text-align: center;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 690px) {
+  .rodape-botao {
+    font-size: 10px;
+    text-align: center;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 590px) {
+  .rodape-botao {
+    font-size: 9px;
+    text-align: center;
+    padding: 8px;
+  }
 }

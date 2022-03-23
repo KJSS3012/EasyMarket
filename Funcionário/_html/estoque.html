@@ -10,57 +10,57 @@
   </head>
   <body>
     <header class="cabecalho">
-      <input type="button" value="Voltar" id="botao-cabecalho" />
+      <input type="button" onclick="voltar()" value="Voltar" id="botao-cabecalho" />
     </header>
     <main class="principal">
       <section class="secao-esquerda">
-        <table class="tabela">
-          <tr class="Linhas">
+        <table class="tabela" >
+          <tr class="linhas">
             <th class="tabela-titulo">Nome</th>
             <th class="tabela-titulo">Preço</th>
             <th class="tabela-titulo">Quantidade</th>
           </tr>
-          <tr class="Linhas">
+          <tr class="Linhas zebra1">
             <td class="tabela-td">Macarrão</td>
             <td class="tabela-td">R$ 2,40 pac.</td>
             <td id="qnt1" class="tabela-td">20</td>
           </tr>
-          <tr class="Linhas">
+          <tr class="Linhas zebra2">
             <td class="tabela-td">Arroz</td>
             <td class="tabela-td">R$ 3,60 kg.</td>
             <td id="qnt2" class="tabela-td">15</td>
           </tr>
-          <tr class="Linhas">
+          <tr class="Linhas zebra1">
             <td class="tabela-td">Feijão</td>
             <td class="tabela-td">R$ 7,50 kg.</td>
             <td id="qnt3" class="tabela-td">35</td>
           </tr>
-          <tr class="Linhas">
+          <tr class="Linhas zebra2">
             <td class="tabela-td">Carne</td>
             <td class="tabela-td">R$ 40,00 kg.</td>
             <td id="qnt4" class="tabela-td">15</td>
           </tr>
-          <tr class="Linhas">
+          <tr class="Linhas zebra1">
             <td class="tabela-td">Frango</td>
             <td class="tabela-td">R$ 10,00 kg.</td>
             <td id="qnt5" class="tabela-td">15</td>
           </tr>
-          <tr class="Linhas">
+          <tr class="Linhas zebra2">
             <td class="tabela-td">Peixe</td>
             <td class="tabela-td">R$ 15,00 kg.</td>
             <td id="qnt6" class="tabela-td">30</td>
           </tr>
-          <tr class="Linhas">
+          <tr class="Linhas zebra1">
             <td class="tabela-td">Banana</td>
             <td class="tabela-td">R$ 6,00 kg.</td>
             <td id="qnt7" class="tabela-td">30</td>
           </tr>
-          <tr class="Linhas">
+          <tr class="Linhas zebra2">
             <td class="tabela-td">Maçã</td>
             <td class="tabela-td">R$ 6,00 kg.</td>
             <td id="qnt8" class="tabela-td">20</td>
           </tr>
-          <tr class="Linhas">
+          <tr class="Linhas zebra1">
             <td class="tabela-td">Tomate</td>
             <td class="tabela-td">R$ 8,40 kg.</td>
             <td id="qnt9" class="tabela-td">35</td>
@@ -72,64 +72,64 @@
         <div class="texto"><h1>Macarrão</h1></div>
         <div class="inputs">
           <input id="1" type="number" class="visor" />
-          <input type="radio" value="Adicionar" name="selecionar1" />Adicionar
-          <input type="radio" value="Retirar" name="selecionar1" />Remover
+          <input type="radio" value="Adicionar" name="selecionar1" class="b-radio"/><span class="texto-radio">Adicionar</span>
+          <input type="radio" value="Retirar" name="selecionar1" class="b-radio"/><span class="texto-radio">Remover</span>
         </div>
 
         <div class="texto"><h1>Arroz</h1></div>
         <div class="inputs">
           <input id="2" type="number" class="visor" />
-          <input type="radio" value="Adicionar" name="selecionar2" />Adicionar
-          <input type="radio" value="Retirar" name="selecionar2" />Remover
+          <input type="radio" value="Adicionar" name="selecionar2" class="b-radio"/><span class="texto-radio">Adicionar</span>
+          <input type="radio" value="Retirar" name="selecionar2" class="b-radio"/><span class="texto-radio">Remover</span>
         </div>
 
         <div class="texto"><h1>Feijão</h1></div>
         <div class="inputs">
           <input id="3" type="number" class="visor" />
-          <input type="radio" value="Adicionar" name="selecionar3" />Adicionar
-          <input type="radio" value="Retirar" name="selecionar3" />Remover
+          <input type="radio" value="Adicionar" name="selecionar3" class="b-radio"/><span class="texto-radio">Adicionar</span>
+          <input type="radio" value="Retirar" name="selecionar3" class="b-radio"/><span class="texto-radio">Remover</span>
         </div>
 
         <div class="texto"><h1>Carne</h1></div>
         <div class="inputs">
           <input id="4" type="number" class="visor" />
-          <input type="radio" value="Adicionar" name="selecionar4" />Adicionar
-          <input type="radio" value="Retirar" name="selecionar4" />Remover
+          <input type="radio" value="Adicionar" name="selecionar4" class="b-radio"/><span class="texto-radio">Adicionar</span>
+          <input type="radio" value="Retirar" name="selecionar4" class="b-radio"/><span class="texto-radio">Remover</span>
         </div>
 
         <div class="texto"><h1>Frango</h1></div>
         <div class="inputs">
           <input id="5" type="number" class="visor" />
-          <input type="radio" value="Adicionar" name="selecionar5" />Adicionar
-          <input type="radio" value="Retirar" name="selecionar5" />Remover
+          <input type="radio" value="Adicionar" name="selecionar5" class="b-radio"/><span class="texto-radio">Adicionar</span>
+          <input type="radio" value="Retirar" name="selecionar5" class="b-radio"/><span class="texto-radio">Remover</span>
         </div>
 
         <div class="texto"><h1>Peixe</h1></div>
         <div class="inputs">
           <input id="6" type="number" class="visor" />
-          <input type="radio" value="Adicionar" name="selecionar6" />Adicionar
-          <input type="radio" value="Retirar" name="selecionar6" />Remover
+          <input type="radio" value="Adicionar" name="selecionar6" class="b-radio"/><span class="texto-radio">Adicionar</span>
+          <input type="radio" value="Retirar" name="selecionar6" class="b-radio"/><span class="texto-radio">Remover</span>
         </div>
 
         <div class="texto"><h1>Banana</h1></div>
         <div class="inputs">
           <input id="7" type="number" class="visor" />
-          <input type="radio" value="Adicionar" name="selecionar7" />Adicionar
-          <input type="radio" value="Retirar" name="selecionar7" />Remover
+          <input type="radio" value="Adicionar" name="selecionar7" class="b-radio"/><span class="texto-radio">Adicionar</span>
+          <input type="radio" value="Retirar" name="selecionar7" class="b-radio"/><span class="texto-radio">Remover</span>
         </div>
 
         <div class="texto"><h1>Maçã</h1></div>
         <div class="inputs">
           <input id="8" type="number" class="visor" />
-          <input type="radio" value="Adicionar" name="selecionar8" />Adicionar
-          <input type="radio" value="Retirar" name="selecionar8" />Remover
+          <input type="radio" value="Adicionar" name="selecionar8" class="b-radio"/><span class="texto-radio">Adicionar</span>
+          <input type="radio" value="Retirar" name="selecionar8" class="b-radio"/><span class="texto-radio">Remover</span>
         </div>
 
         <div class="texto"><h1>Tomate</h1></div>
         <div class="inputs">
           <input id="9" type="number" class="visor" />
-          <input type="radio" value="Adicionar" name="selecionar9" />Adicionar
-          <input type="radio" value="Retirar" name="selecionar9" />Remover
+          <input type="radio" value="Adicionar" name="selecionar9" class="b-radio"/><span class="texto-radio">Adicionar</span>
+          <input type="radio" value="Retirar" name="selecionar9" class="b-radio"/><span class="texto-radio">Remover</span>
         </div>
       </section>
     </main>

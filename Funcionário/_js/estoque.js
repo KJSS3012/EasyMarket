@@ -26,3 +26,6 @@ function processar() {
     processar_AUX("selecionar8","8","qnt8")
     processar_AUX("selecionar9","9","qnt9")
 }
+function voltar() {
+    location.href = "../_html/opcoes.html"
+}

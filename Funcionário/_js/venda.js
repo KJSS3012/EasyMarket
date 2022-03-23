@@ -25,3 +25,7 @@ function troco() {
         document.getElementById('prod-troco').value = ""
     }
 }
+
+function voltar() {
+    location.href = "../_html/opcoes.html"
+}

@@ -5,8 +5,8 @@
   box-sizing: border-box;
   font-family: "Be Vietnam Pro", sans-serif;
 }
-body{
-  background-color: #aaaaaa;
+body {
+  background-color: #e1e1e1;
 }
 .cabecalho {
   padding-top: 20px;
@@ -33,10 +33,38 @@ body{
   border: none;
   border-radius: 30px;
   padding: 20px;
-  font-size: clamp(1em, 1em + 1vw, 1.25em);
+  font-size: 30px;
   width: 20%;
   cursor: pointer;
 }
 .principal-botao:hover {
   background-color: rgba(208, 5, 11, 95%);
+}
+
+@media (max-width: 1100px) {
+  button.principal-botao {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 850px) {
+  button.principal-botao {
+    font-size: 13px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 680px) {
+  button.principal-botao {
+    font-size: 11px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 520px) {
+  button.principal-botao {
+    font-size: 8px;
+    text-align: center;
+  }
 }

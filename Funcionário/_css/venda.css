@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#botao-cabecalho {
+  background-color: rgba(208, 5, 11, 100%);
+  border: none;
+  border-radius: 30px;
+  padding: 20px;
+  width: 8%;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+.cabecalho {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.visor {
+  padding: 2px;
+  width: 50%;
+}
+.principal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 15%;
+}
