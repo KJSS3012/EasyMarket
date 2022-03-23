@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: "Be Vietnam Pro", sans-serif;
 }
-p{
+p {
   font-size: clamp(1em, 1em + 1vw, 1.25em);
 }
 .cabecalho {

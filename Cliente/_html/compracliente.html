@@ -15,7 +15,7 @@
     <main class="principal">
       <section class="secao1">
         <div class="secao1-div">
-          <input type="text" class="secao1-div-visor" readonly value="Macarrão"/>
+          <input type="text" class="secao1-div-visor" readonly value="Macarrão - R$ 2,40"/>
           <div class="secao1-div2">
             <input type="button" value="-" class="secao1-diminuir" onclick="remover('1')"/>
             <input type="text" readonly class="visor2" value="0" id="visor1"/>
@@ -24,7 +24,7 @@
         </div>
 
         <div class="secao1-div">
-          <input type="text" class="secao1-div-visor" value="Arroz" readonly />
+          <input type="text" class="secao1-div-visor" value="Arroz - R$ 3,60" readonly />
           <div class="secao1-div2">
             <input type="button" value="-" class="secao1-diminuir" onclick="remover('2')"/>
             <input type="text" readonly class="visor2" value="0" id="visor2"/>
@@ -33,7 +33,7 @@
         </div>
 
         <div class="secao1-div">
-          <input type="text" class="secao1-div-visor" value="Feijão" readonly />
+          <input type="text" class="secao1-div-visor" value="Feijão - R$ 7,50" readonly />
           <div class="secao1-div2">
             <input type="button" value="-" class="secao1-diminuir" onclick="remover('3')"/>
             <input type="text" readonly class="visor2" value="0" id="visor3"/>
@@ -42,7 +42,7 @@
         </div>
 
         <div class="secao1-div">
-          <input type="text" class="secao1-div-visor" value="Carne" readonly />
+          <input type="text" class="secao1-div-visor" value="Carne - R$ 40,00" readonly />
           <div class="secao1-div2">
             <input type="button" value="-" class="secao1-diminuir" onclick="remover('4')"/>
             <input type="text" readonly class="visor2" value="0" id="visor4"/>
@@ -51,7 +51,7 @@
         </div>
 
         <div class="secao1-div">
-          <input type="text" class="secao1-div-visor" value="Frango" readonly />
+          <input type="text" class="secao1-div-visor" value="Frango - R$ 10,00" readonly />
           <div class="secao1-div2">
             <input type="button" value="-" class="secao1-diminuir" onclick="remover('5')"/>
             <input type="text" readonly class="visor2" value="0" id="visor5"/>
@@ -60,7 +60,7 @@
         </div>
 
         <div class="secao1-div">
-          <input type="text" class="secao1-div-visor" value="Peixe" readonly />
+          <input type="text" class="secao1-div-visor" value="Peixe - R$ 15,00" readonly />
           <div class="secao1-div2">
             <input type="button" value="-" class="secao1-diminuir" onclick="remover('6')"/>
             <input type="text" readonly class="visor2" value="0" id="visor6"/>
@@ -69,7 +69,7 @@
         </div>
 
         <div class="secao1-div">
-          <input type="text" class="secao1-div-visor" value="Banana" readonly />
+          <input type="text" class="secao1-div-visor" value="Banana - R$ 6,00" readonly />
           <div class="secao1-div2">
             <input type="button" value="-" class="secao1-diminuir" onclick="remover('7')"/>
             <input type="text" readonly class="visor2" value="0" id="visor7"/>
@@ -78,7 +78,7 @@
         </div>
 
         <div class="secao1-div">
-          <input type="text" class="secao1-div-visor" value="Maçã" readonly />
+          <input type="text" class="secao1-div-visor" value="Maçã - R$ 6,00" readonly />
           <div class="secao1-div2">
             <input type="button" value="-" class="secao1-diminuir" onclick="remover('8')"/>
             <input type="text" readonly class="visor2" value="0" id="visor8"/>
@@ -87,7 +87,7 @@
         </div>
 
         <div class="secao1-div">
-          <input type="text" class="secao1-div-visor" value="Tomate" readonly />
+          <input type="text" class="secao1-div-visor" value="Tomate - R$ 8,40" readonly />
           <div class="secao1-div2">
             <input type="button" value="-" class="secao1-diminuir" onclick="remover('9')"/>
             <input type="text" readonly class="visor2" value="0" id="visor9"/>
@@ -98,12 +98,10 @@
       <section class="secao2">
           <input type="number" readonly id="visorfinal" value="0.00">
           <input type="button" value="Finalizar" class="ultima-div-botao" onclick="finalizar()"/>
+          <p id="texto"></p>
       </section>
     </main>
-    <footer>
-      <table id="table">
-        
-      </table>
+    <footer class="rodape">
     </footer>
     <script src="../_js/compracliente.js"></script>
     <script src="../_js/database.js"></script>
