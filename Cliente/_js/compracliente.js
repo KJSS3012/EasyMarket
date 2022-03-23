@@ -116,3 +116,26 @@ function calc(codigo) {
     caixa = bank[0]+bank[1]+bank[2]+bank[3]+bank[4]+bank[5]+bank[6]+bank[7]+bank[8];
     document.getElementById('visorfinal').value = (caixa).toFixed(2);
 }
+
+function finalizar() {
+    var l1 = `<tr>Macarrão&nbsp;R$ 2,40&nbsp;${document.getElementById('visor1').value}</tr>`
+    var l2 = `<tr>Arroz&nbsp;R$ 3,60&nbsp;${document.getElementById('visor2').value}</tr>`
+    var l3 = `<tr>Feijão&nbsp;R$ 7,50&nbsp;${document.getElementById('visor3').value}</tr>`
+    var l4 = `<tr>Carne&nbsp;R$ 40,00&nbsp;${document.getElementById('visor4').value}</tr>`
+    var l5 = `<tr>Frango&nbsp;R$ 10,00&nbsp;${document.getElementById('visor5').value}</tr>`
+    var l6 = `<tr>Peixe&nbsp;R$ 3,60&nbsp;${document.getElementById('visor6').value}</tr>`
+    var l7 = `<tr>Banana&nbsp;R$ 6,00&nbsp;${document.getElementById('visor7').value}</tr>`
+    var l8 = `<tr>Maçã&nbsp;R$ 6,00&nbsp;${document.getElementById('visor8').value}</tr>`
+    var l9 = `<tr>Tomate&nbsp;R$ 8,40&nbsp;${document.getElementById('visor9').value}</tr>`
+    var l10 = `<tr>Total: ${document.getElementById('visorfinal').value}</tr>`
+    document.getElementById('table').innerHTML += l1;
+    document.getElementById('table').innerHTML += l2;
+    document.getElementById('table').innerHTML += l3;
+    document.getElementById('table').innerHTML += l4;
+    document.getElementById('table').innerHTML += l5;
+    document.getElementById('table').innerHTML += l6;
+    document.getElementById('table').innerHTML += l7;
+    document.getElementById('table').innerHTML += l8;
+    document.getElementById('table').innerHTML += l9;
+    document.getElementById('table').innerHTML += l10;
+}
